@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>浏览器换肤效果</title>
+	</head>
+
+	<body onload="colorload();">
+		<section id="main">
+			<button id="redbutton" onclick="redSet()">红色</button>
+			<button id="greenbutton" onclick="greenSet()">绿色</button>
+			<button id="bluebutton" onclick="blueSet()">蓝色</button>
+			<div id="divblock" style="width:500px; height: 500px;"></div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		//检测浏览器是否支持locaStorage
+		if(typeof localStorage === 'undefined') {
+			window.alert('你的浏览器不支持locaStorage');
+		} else {
+			window.alert('你的浏览器支持locaStorage');
+		}
+		var storage = localStorage;
+		//设置div的背景是红色，并保存locaStorage
+		function redSet() {
+			var value = "red";
+			document.getElementById("divblock").style.backgroundColor = value;
+			window.localStorage.setItem('DDivBackGroundColor', value);
+		}
+		//设置div的背景是绿色，并保存locaStorage
+		function greenSet() {
+			var value = "green";
+			document.getElementById("divblock").style.backgroundColor = value;
+			window.localStorage.setItem('DDivBackGroundColor', value);
+		}
+		//设置div的背景是蓝色，并保存locaStorage
+		function blueSet() {
+			var value = "blue";
+			document.getElementById("divblock").style.backgroundColor = value;
+			window.localStorage.setItem('DDivBackGroundColor', value);
+		}
+
+		function colorload() {
+			var divblock = document.getElementById("divblock");
+			var bgcolor = divblock.style.backgroundColor;
+			bgcolor = window.localStorage.getItem('DivBackGroundColor');
+		}
+	</script>
+
+</html>

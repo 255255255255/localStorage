@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if(localStorage.pagecount){
+				localStorage.pagecount=Number(localStorage.pagecount)+1;
+			}else{
+				localStorage.pagecount=1;
+			}
+			document.write("<p>总访问数：</p>"+localStorage.pagecount);
+			if(sessionStorage.pagecount){
+				sessionStorage.pagecount=Number(sessionStorage.pagecount)+1;
+			}else{
+				sessionStorage.pagecount=1;
+			}
+			document.write("<p>总访问数：</p>"+sessionStorage.pagecount);
+			
+			
+		</script>
+	</body>
+</html>
