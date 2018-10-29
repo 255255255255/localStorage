@@ -1,4 +1,4 @@
-> 在Web项目中，要实现客户端与服务端的交互，可通过cookie、隐藏框架、使用iframe、HTTP请求、LiveConnect请求和智能HTTP请求等方式实现。下面我就来一一的说下。
+> 在Web项目中，要实现客户端与服务端的交互，可通过cookie、隐藏框架、使用iframe、HTTP请求、LiveConnect请求和智能HTTP请求等方式实现。
 
 一、cookie
 
