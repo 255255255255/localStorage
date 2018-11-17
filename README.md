@@ -13,7 +13,7 @@
 
 * 值(Value):保存在cookie中的字符串值。这个值在存储之前必须用`encodeURIComponent()`对其进行编码，以免丢失数据或占用了cookie。名称和值加起来的字节数不能超过4095字节，也就是4KB。
 
-`encodeURIComponent()`:函数可把字符串作为 URI 组件进行编码。
+`encodeURIComponent()`:函数可把字符串作为 URI 组件进行编码
 
 语法：`encodeURIComponent(URIstring)`;
 
