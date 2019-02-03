@@ -3,7 +3,7 @@
 一、cookie
 
  cookie是第一个JavaScript可以利用的客户端-服务端之间的交互手段。浏览器向服务器发送请求时，为这个服务器存储的cookie会与其他信息一起发送到服务器。这使得JavaScript可以在客户端设置一个cookie，之后服务器端就能够读取它了。
- 我截取了百度首页的cookie的情况，如下图。
+ 我截取了百度首页的cookie的情况，如下图
 
 ![ ](http://images.cnblogs.com/cnblogs_com/cliy-10/1232440/o_1.png)
 
